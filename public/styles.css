@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.movie-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.movie-card{
+    height: 350px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+
+.movie-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 335px;
+    left: 15px;
+    border-radius: 100%;
+    background: white;
+    border: 1px black solid;
+}
+
+.card-img-cont{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.card-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-input{
+    height: 25px;
+}
