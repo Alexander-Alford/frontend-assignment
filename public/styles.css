@@ -1,3 +1,7 @@
+*{
+    font-family: sans-serif;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -21,11 +25,15 @@
     border-radius: 8px;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
 }
+.movie-card:hover{
+    cursor: pointer;
+}
 
 
 .movie-rating{
     display: flex;
     justify-content: center;
+    font-size: 12px;
     align-items: center;
     width: 24px;
     height: 24px;
@@ -51,6 +59,66 @@
     object-fit: cover;
 }
 
+
+.grey-background{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    background: white;
+    position: inherit;
+    width: 500px;
+    height: auto;
+    padding: 18px;
+    padding-top: 10px;
+}
+
+.popup-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.x-button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+}
+
+.paragraph{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.search-button{
+    background: white;
+    box-shadow: none;
+    border: solid 1px  #cccccc;
+    border-right-style: none;
+    height: 29px;
+    width: 31px;
+}
+
 .text-input{
+    border: solid 1px  #cccccc;
+    border-left-style: none;
     height: 25px;
+}
+
+.text-input[type=text]:focus {
+    border: solid 1px  #cccccc;
+    border-left-style: none;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
 }
